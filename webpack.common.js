@@ -3,11 +3,10 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/index.js', // входной файл
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    // publicPath: '/', // эта штука портила пути, что за подстава?
+    publicPath: '',
   },
   module: {
     rules: [
@@ -32,18 +31,9 @@ module.exports = {
           MiniCssExtractPlugin.loader, 'css-loader',
         ],
       },
-      // {
-      //   test: /\.svg$/,
-      //   type: 'asset/resource',
-      // },
       {
-        test: /\.(png|jpg|gif|svg)$/i,
-        type: 'asset',
-        parser: {
-          dataUrlCondition: {
-            maxSize: 8192,
-          },
-        },
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },

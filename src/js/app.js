@@ -1,15 +1,11 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-console */
-/* eslint-disable linebreak-style */
-import sum from './module';
+// TODO: write code here
 
 // comment this to pass build
-// const unusedVariable = 'variable';
+const unusedVariable = "variable";
 
 // for demonstration purpose only
 export default function demo(value) {
-  return value;
+  return `Demo: ${value}`;
 }
 
-console.log('app.js included');
-console.log(sum(10, 5));
+console.log("app.js included");
