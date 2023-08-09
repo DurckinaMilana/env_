@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/t4bqfw3g2b80i3qc?svg=true)](https://ci.appveyor.com/project/DurckinaMilana/env-pjkm4)
